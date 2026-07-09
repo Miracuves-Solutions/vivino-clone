@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/vivino-clone → Demo se
 Most alcohol-delivery scripts stop at "catalog + checkout." This platform ships with the features that actually run an alcohol-e-commerce *business*:
 
 - **Age Verification Built-In** — ID + selfie + age gate at checkout + delivery — required to sell alcohol online legally
-- **Sommelier-Grade Catalog** — 
-- **Same-Day Delivery with ID Check** — varietal, region, vintage, pairing, ratings — same depth Vivino and Drizly built for wine/spirits
-- **Subscription Cases** — state-by-state rules for hours, IDs, deliveries — same logic every alcohol e-commerce needs
-- **Regional Compliance Rules** — monthly curated wine/spirits cases — what drives Drizly, Flaviar, and Winc's LTV
+- **Sommelier-Grade Catalog** — varietal, region, vintage, pairing, ratings — same depth Vivino and Drizly built for wine/spirits
+- **Same-Day Delivery with ID Check** — courier scans ID at door — what enables alcohol delivery in 30+ markets
+- **Subscription Cases** — monthly curated wine/spirits cases — what drives Drizly, Flaviar, and Winc's LTV
+- **Regional Compliance Rules** — state-by-state rules for hours, IDs, deliveries — same logic every alcohol e-commerce needs
 
 ## 📦 Core Features
 
