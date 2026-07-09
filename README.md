@@ -1,11 +1,11 @@
 # Vivino Clone — White-Label Alcohol & Beverage E-Commerce Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxazon.mimeld.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxooze.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/vivino-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/vivino-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
-**MXAzon** is a production-ready, white-label Vivino clone: a complete alcohol & beverage e-commerce platform with age verification and admin console — delivered with **100% source code ownership** in **6 working days**.
+**MXOoze** is a production-ready, white-label Vivino clone: a complete alcohol & beverage e-commerce platform with age verification and admin console — delivered with **100% source code ownership** in **6 working days**.
 
 > 🍷 **See it running before you talk to anyone.** Live buyer app, store dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/vivino-clone#demo). No sales call required.
 
@@ -16,7 +16,7 @@
 | Environment | URL | What you can test |
 |---|---|---|
 | 📱 Buyer App | [mas.mimeld.com](https://mas.mimeld.com) | Browse, age-verify, order, track delivery |
-| 🌐 Web Store | [mxazon.mimeld.com](https://mxazon.mimeld.com) | Full wine/spirits e-commerce in browser |
+| 🌐 Web Store | [mxooze.mimeld.com](https://mxooze.mimeld.com) | Full wine/spirits e-commerce in browser |
 | 🍾 Store Dashboard | [Solution page → Demo](https://miracuves.com/vivino-clone#demo) | Inventory, orders, compliance, analytics |
 | 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/vivino-clone#demo) | Stores, regions, age checks, analytics |
 
@@ -106,9 +106,9 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Vivino Clone
-{MX_NAME}         MXAzon
+{MX_NAME}         MXOoze
 {CATEGORY}        Alcohol & Beverage E-Commerce Platform
-{DEMO_WEB}        mxazon.mimeld.com
+{DEMO_WEB}        mxooze.mimeld.com
 {PRICE}           $2,899
 {SLUG}            vivino-clone
 {SOLUTION_URL}    https://miracuves.com/vivino-clone/
