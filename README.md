@@ -1,322 +1,119 @@
-# Vivino Clone — White-Label Solution by Miracuves
+# Vivino Clone — White-Label Alcohol & Beverage E-Commerce Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxooze.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/vivino-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxazon.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/vivino-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/vivino-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXAzon** is a production-ready, white-label Vivino clone: a complete alcohol & beverage e-commerce platform with age verification and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> 🍷 **See it running before you talk to anyone.** Live buyer app, store dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/vivino-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxooze.mimeld.com](https://mxooze.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/vivino-clone/#demo) | Users, content, plans, analytics |
+| 📱 Buyer App | [mas.mimeld.com](https://mas.mimeld.com) | Browse, age-verify, order, track delivery |
+| 🌐 Web Store | [mxazon.mimeld.com](https://mxazon.mimeld.com) | Full wine/spirits e-commerce in browser |
+| 🍾 Store Dashboard | [Solution page → Demo](https://miracuves.com/vivino-clone#demo) | Inventory, orders, compliance, analytics |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/vivino-clone#demo) | Stores, regions, age checks, analytics |
 
-Demo credentials: [miracuves.com/vivino-clone -> Demo section](https://miracuves.com/vivino-clone/#demo)
-
-## What Makes This Vivino Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/vivino-clone → Demo section](https://miracuves.com/vivino-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Vivino Clone Different
 
-1. User opens
-2. Selects
-3. Completes
-4. Payment
-5. Confirmation
+Most alcohol-delivery scripts stop at "catalog + checkout." This platform ships with the features that actually run an alcohol-e-commerce *business*:
 
----
+- **Age Verification Built-In** — ID + selfie + age gate at checkout + delivery — required to sell alcohol online legally
+- **Sommelier-Grade Catalog** — 
+- **Same-Day Delivery with ID Check** — varietal, region, vintage, pairing, ratings — same depth Vivino and Drizly built for wine/spirits
+- **Subscription Cases** — state-by-state rules for hours, IDs, deliveries — same logic every alcohol e-commerce needs
+- **Regional Compliance Rules** — monthly curated wine/spirits cases — what drives Drizly, Flaviar, and Winc's LTV
 
-## Core Features
+## 📦 Core Features
 
-### User App
-- Wine catalog
-- Label scanner
-- Reviews & ratings
-- Pricing & stores
-- Wishlist
+**Buyer:** age verification · browse catalog · wine/spirits education · taste profile · cart with delivery window · live tracking · reviews
 
-### Seller Panel
-- Product listing
-- Inventory
-- Orders
+**Store / Vendor:** inventory · orders · age-checked delivery · compliance reports · payouts · analytics
 
-### Admin Panel
-- Vendor mgmt
-- Revenue
-- Compliance
+**Admin:** regional rules · age verification · store approvals · commission engine · analytics
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Automation
-- **AI Label Recognition** - Scan wine labels for instant info
-- **AI Recommendations** - Personalized pairings
-- **AI Pricing** - Market price comparison
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| User App | Browse,buy |
-| Seller Panel | Inventory,orders |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Buyer App<br/>Flutter]
+    B[Web Store<br/>Responsive]
+    W[Store Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(PostgreSQL)]
+    G --> ES[Elasticsearch<br/>Catalog]
+    ES --> A
+    ES --> B
+    G --> AGE[Age<br/>Verification]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps · Node.js backend · Elasticsearch for catalog · PostgreSQL · Stripe · ID-verification provider · Stripe, regional gateways, ID-verification add-on
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/vivino-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium
-- Commission per sale
-- Featured listings
-- Advertising
+Custom alcohol-delivery platforms run $80k–$300k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for compliance and courier ID checks.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Vivino Clone — Full Solution Page](https://miracuves.com/vivino-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does an Alcohol E-Commerce App Cost in 2026?](https://miracuves.com/vivino-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Vivino Clone Script in 2026](https://miracuves.com/vivino-clone/blog/) features, pricing & launch guide
+- 🧠 [Regional Alcohol Delivery Compliance](https://miracuves.com/vivino-clone/blog/) state-by-state rule map
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/vivino-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
 
----
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
 
-## What's Included
-
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$2,899** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
-
-**What is included:**
-
-- User App
-- Seller Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
-
----
-**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/vivino-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## Why Not Build From Scratch?
+### ⚠️ Note on This Repository
 
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$2,899 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/vivino-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+*Keywords: vivino clone, vivino clone script, alcohol delivery, wine app, spirits e-commerce, white label Drizly, ID verification, Flutter, Node.js*
 
 ---
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- Wine retail
-- Premium spirits
-- Craft beer
-- Gourmet food
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/vivino-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your wine marketplace platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/vivino-clone](https://miracuves.com/vivino-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: vivino clone, vivino script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Vivino Clone
+{MX_NAME}         MXAzon
+{CATEGORY}        Alcohol & Beverage E-Commerce Platform
+{DEMO_WEB}        mxazon.mimeld.com
+{PRICE}           $2,899
+{SLUG}            vivino-clone
+{SOLUTION_URL}    https://miracuves.com/vivino-clone/
+{VERTICAL}        alcohol
+
+See /tmp/verticals/alcohol.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
